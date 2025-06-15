@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,94 +7,63 @@
   font-family: "Poppins", sans-serif;
 }
 
-section {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background: #121321;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3f2fd;
 }
-
-section::before {
-  content: " ";
-  position: absolute;
-  height: 240px;
-  width: 240px;
-  border-radius: 50%;
-  transform: translate(-150px , -100px);
-  background: linear-gradient( 90deg , #9c27b0, #f3f5f5);
-}
-
-section::after {
-  position: absolute;
-  content: " ";
-  height: 240px;
-  width: 240px;
-  border-radius: 50%;
-    transform: translate(150px , 100px);
-  background: linear-gradient( 90deg , #9c27b0, #f3f5f5);
-}
-
-.container {
-  position: relative;
-  height: 225px;
-  width: 375px;
-  z-index:100 ; 
-}
-.container .card {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 25px;
-  backdrop-filter: blur(25px);
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.front-face header,
-.front-face .logo {
-  display: flex;
-  align-items: center;
-}
-.front-face header{
-  justify-content: space-between;
-}
-
-.front-face .logo img {
+.logo img {
     width: 48px;
     margin-right: 10px;
 }
 
+header .chip {
+    width: 60px;
+}
+
+.container {
+    position: relative;
+    background-image: url("images/bg.png");
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+
+}
+
+header,
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 h5 {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.front-face .chip {
-  width: 50px;
-}
-
-.front-face .card-details{
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-top: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
 }
 h6 {
-  font-size: 10px;
-  font-weight: 400;
+    color:#fff ;
+    font-size: 12px;
+    font-weight: 400;
 }
 h5 .number {
-  font-size: 18px;
-  letter-spacing: 1px;
+    margin-top: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
+.container  .card-details {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
+}
 h5.name {
-  margin-top: 20px;
+    margin-top: 20px;
 }
-
 
